@@ -4,7 +4,11 @@
 interface Config {
   url: string;
 }
-declare module "myPackage" {
-  function init(config: Config): boolean;
-  function exit(code: number): number;
-}
+
+export declare function init(config: Config): boolean;
+export declare function exit(code: number): number;
+
+// declare module "myPackage" {
+//   export function init(config: Config): boolean;
+//   export function exit(code: number): number;
+// }
