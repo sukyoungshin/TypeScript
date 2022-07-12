@@ -6,17 +6,11 @@ interface Config {
   url: string;
 }
 
-// Work
-// export declare function init(config: Config): boolean;
-// export declare function exit(code: number): number;
-
 declare module "./myPackage" {
   function init(config: Config): boolean;
   function exit(code: number): number;
 }
 
-// Error
-// declare module "myPackage" {
-//   function init(config: Config): boolean;
-//   function exit(code: number): number;
-// }
+// Or
+// export declare function init(config: Config): boolean;
+// export declare function exit(code: number): number;
